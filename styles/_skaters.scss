@@ -1,6 +1,18 @@
 .skaters{
- img{
-   width:200px;
-   height:200px;
+  width:100%;
+  .lance,.rodney, .steve, .tommy{
+  border:8px solid #fff;
+  position:relative;
+  margin-bottom:2rem;
+img{
+   width:100%;
  }
+ h2{
+   color: #fff;
+position: absolute;
+top: 30px;
+left: 23px;
+font-size: 2.5rem;
+ }
+}
 }
