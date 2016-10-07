@@ -1,14 +1,15 @@
 .skaters{
   width:100%;
   .lance,.rodney, .steve, .tommy{
-  border:8px solid #fff;
+  border:8px solid $border-color;
   position:relative;
   margin-bottom:2rem;
+  box-shadow:$box-shadow;
 img{
    width:100%;
  }
  h2{
-   color: #fff;
+   color: $primary-text;
 position: absolute;
 top: 30px;
 left: 23px;

@@ -1,5 +1,6 @@
 .skateboards{
-  border:2px solid #000;
+  box-shadow: $box-shadow;
+  border:2px solid $border-color;
   background:#fff;
   img{
     width:18%;
