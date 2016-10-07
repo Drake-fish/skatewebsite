@@ -1,0 +1,9 @@
+body{
+  background:url("styles/assets/bg.jpg") no-repeat;
+  background-size:cover;
+}
+
+
+.container{
+  @include outer-container(80%);
+}
