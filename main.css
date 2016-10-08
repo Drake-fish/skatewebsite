@@ -21,7 +21,7 @@ body {
 
 @media (min-width: 800px) {
   .container {
-    max-width: 70%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto; }
     .container::after {
@@ -191,30 +191,186 @@ body {
   color: #B4292E;
   padding-bottom: 1rem; }
 
+@media (min-width: 800px) {
+  .article-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .article-container:last-child {
+      margin-right: 0; }
+    .article-container .article {
+      height: 100%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      padding-right: .5rem;
+      padding-left: .5rem; }
+      .article-container .article:last-child {
+        margin-right: 0; }
+      .article-container .article .ray {
+        padding-right: 6rem; } }
+@media (min-width: 900px) {
+  .article {
+    height: 31rem; } }
+@media (min-width: 1000px) {
+  .article {
+    height: 30rem; } }
 .skaters {
   width: 100%; }
-  .skaters .lance, .skaters .rodney, .skaters .steve, .skaters .tommy {
-    border: 8px solid #FBFBFB;
-    position: relative;
-    margin-bottom: 2rem;
-    box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77); }
-    .skaters .lance img, .skaters .rodney img, .skaters .steve img, .skaters .tommy img {
-      width: 100%; }
-    .skaters .lance h2, .skaters .rodney h2, .skaters .steve h2, .skaters .tommy h2 {
-      color: #FFFFF1;
-      position: absolute;
-      top: 30px;
-      left: 23px;
-      font-size: 2.5rem; }
 
+.lance {
+  border: 8px solid #FBFBFB;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77);
+  overflow: hidden;
+  height: 11rem;
+  background: url("styles/assets/sk8er-4.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.rodney {
+  border: 8px solid #FBFBFB;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77);
+  overflow: hidden;
+  height: 11rem;
+  background: url("styles/assets/sk8er-3.png");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.tommy {
+  border: 8px solid #FBFBFB;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77);
+  height: 11rem;
+  background: url("styles/assets/sk8er-2.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.steve {
+  border: 8px solid #FBFBFB;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77);
+  overflow: hidden;
+  height: 11rem;
+  background-image: url("styles/assets/sk8er-1.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+h2 {
+  color: #FFFFF1;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2.5rem; }
+
+@media (min-width: 800px) {
+  .skaters {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .skaters::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .skaters .lance, .skaters .rodney, .skaters .tommy, .skaters .steve {
+      border: 4px solid #fff;
+      box-sizing: border-box; }
+      .skaters .lance:nth-child(3n), .skaters .rodney:nth-child(3n), .skaters .tommy:nth-child(3n), .skaters .steve:nth-child(3n) {
+        margin-right: 0; }
+      .skaters .lance:nth-child(3n+1), .skaters .rodney:nth-child(3n+1), .skaters .tommy:nth-child(3n+1), .skaters .steve:nth-child(3n+1) {
+        clear: left; }
+
+  .lance {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    height: 9rem;
+    background-size: 130%;
+    background-position-x: 100%; }
+    .lance:last-child {
+      margin-right: 0; }
+
+  .rodney {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    height: 9rem;
+    background-size: 133%; }
+    .rodney:last-child {
+      margin-right: 0; }
+
+  .tommy {
+    overflow: none;
+    float: right;
+    width: 31%;
+    height: 20rem;
+    background-size: 297%;
+    background-position-x: 80%; }
+    .tommy h2 {
+      margin-top: 11rem; }
+
+  .steve {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    height: 9rem;
+    background-size: 111%;
+    background-position-y: 51%; }
+    .steve:last-child {
+      margin-right: 0; }
+    .steve h2 {
+      margin-top: 6rem; } }
+@media (min-width: 1000px) {
+  .lance {
+    height: 14rem;
+    background-size: 157%; }
+
+  .rodney {
+    height: 14rem;
+    background-size: 157%; }
+
+  .tommy {
+    background-size: 369%;
+    height: 30rem; }
+
+  .steve {
+    height: 14rem; } }
 .skateboards {
+  display: inline-block;
   box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77);
   border: 2px solid #FBFBFB;
   background: #fff; }
   .skateboards img {
     width: 18%; }
 
+@media (min-width: 800px) {
+  .skateboards {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: inline-block; }
+    .skateboards:last-child {
+      margin-right: 0; }
+    .skateboards img {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 7.44167%; }
+      .skateboards img:last-child {
+        margin-right: 0; } }
 .contact {
+  display: inline-block;
   background: #fff;
   margin-bottom: 2rem;
   box-shadow: 0px 8px 5px 0px rgba(145, 145, 145, 0.77); }
@@ -231,6 +387,7 @@ body {
   border-box: nset 2px 2px 19px 0px rgba(0, 0, 0, 0.51);
   padding-bottom: 1rem; }
   .contact-form input {
+    box-shadow: inset 0 0 0 0 #888;
     width: 90%;
     height: 2rem;
     margin-bottom: 1rem;
@@ -245,5 +402,35 @@ body {
   margin: 0 auto;
   background: #B4292E;
   color: #FFFFF1; }
+
+@media (min-width: 800px) {
+  .contact-info {
+    display: inline-block;
+    width: 50%;
+    padding-left: 1rem; }
+
+  .footer-social {
+    filter: grayscale(100%);
+    text-align: left; }
+
+  .contact-social {
+    width: 25px;
+    height: 25px; }
+
+  .contact-form {
+    text-align: left;
+    padding-top: 3rem;
+    float: right;
+    display: inline-block;
+    width: 49%; }
+    .contact-form input {
+      text-align: left;
+      background: #fff; }
+    .contact-form .message {
+      padding-top: 1rem;
+      padding-bottom: 5rem; }
+    .contact-form .submit {
+      margin-right: 1rem;
+      float: right; } }
 
 /*# sourceMappingURL=main.css.map */

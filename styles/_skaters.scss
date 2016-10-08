@@ -1,19 +1,122 @@
 .skaters{
   width:100%;
-  .lance,.rodney, .steve, .tommy{
-  border:8px solid $border-color;
+}
+  .lance{
+    border:8px solid $border-color;
+    position:relative;
+    margin-bottom:2rem;
+    box-shadow:$box-shadow;
+    overflow:hidden;
+    height:11rem;
+    background:url("styles/assets/sk8er-4.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+  }
+
+  .rodney{
+    border:8px solid $border-color;
+    position:relative;
+    margin-bottom:2rem;
+    box-shadow:$box-shadow;
+    overflow:hidden;
+    height:11rem;
+    background:url("styles/assets/sk8er-3.png");
+    background-repeat:no-repeat;
+      background-size:100%;
+  }
+  .tommy{
+    border:8px solid $border-color;
+    position:relative;
+    margin-bottom:2rem;
+    box-shadow:$box-shadow;
+    height:11rem;
+    background:url("styles/assets/sk8er-2.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+  }
+  .steve{
+    border:8px solid $border-color;
   position:relative;
   margin-bottom:2rem;
   box-shadow:$box-shadow;
-img{
-   width:100%;
- }
+  overflow:hidden;
+  height:11rem;
+background-image:url("styles/assets/sk8er-1.png");
+background-size:100%;
+background-repeat:no-repeat;
+  }
+
  h2{
    color: $primary-text;
-position: absolute;
-top: 30px;
-left: 23px;
+text-align:center;
+margin-top:4rem;
 font-size: 2.5rem;
- }
+
 }
+
+
+@media (min-width:800px){
+  .skaters{
+    @include outer-container;
+  .lance, .rodney, .tommy, .steve{
+    border:4px solid #fff;
+    @include omega(3n);
+    box-sizing:border-box;
+
+  }
+}
+  .lance{
+  @include span-columns(4 of 12);
+  height:9rem;
+  background-size:130%;
+  background-position-x:100%;
+  }
+  .rodney{
+    @include span-columns(4 of 12);
+    height:9rem;
+    background-size:133%;
+
+
+  }
+  .tommy{
+    overflow:none;
+    float:right;
+    width:31%;
+    height:20rem;
+    background-size:297%;
+    background-position-x:80%;
+    h2{
+      margin-top:11rem;
+    }
+
+  }
+
+  .steve{
+    @include span-columns(8 of 12);
+    height:9rem;
+    background-size:111%;
+    background-position-y:51%;
+    h2{
+      margin-top:6rem;
+    }
+
+  }
+}
+
+@media (min-width:1000px){
+  .lance{
+    height:14rem;
+    background-size:157%;
+  }
+  .rodney{
+    height:14rem;
+    background-size:157%;
+  }
+  .tommy{
+    background-size:369%;
+    height:30rem;
+  }
+  .steve{
+    height:14rem;
+  }
 }

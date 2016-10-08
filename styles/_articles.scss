@@ -6,6 +6,7 @@ padding-right: 36px;
 margin-top: 2rem;
 margin-bottom:2rem;
 box-shadow: $box-shadow;
+
 }
 
 .date{
@@ -19,3 +20,31 @@ box-shadow: $box-shadow;
   color:$link-color;
   padding-bottom:1rem;
 }
+
+
+@media (min-width: 800px){
+  .article-container{
+    @include span-columns(12);
+    .article{
+      height:100%;
+      @include span-columns(4);
+      padding-right:.5rem;
+      padding-left:.5rem;
+      .ray{
+        padding-right:6rem;
+      }
+
+      }
+    }
+  }
+  @media (min-width:900px){
+    .article{
+      height:31rem;
+    }
+  }
+
+  @media (min-width:1000px){
+    .article{
+      height:30rem;
+    }
+  }

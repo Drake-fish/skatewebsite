@@ -12,6 +12,6 @@ body{
 
 @media (min-width:800px){
   .container{
-    @include outer-container(70%);
+    @include outer-container(80%);
   }
 }
