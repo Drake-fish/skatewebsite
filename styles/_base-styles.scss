@@ -9,3 +9,9 @@ body{
 .container{
   @include outer-container(80%);
 }
+
+@media (min-width:800px){
+  .container{
+    @include outer-container(70%);
+  }
+}
