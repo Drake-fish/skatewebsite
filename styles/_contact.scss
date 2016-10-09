@@ -65,8 +65,12 @@ input{
    padding-bottom:5rem;
  }
 .submit{
-  margin-right:1rem;
-        float:right;
+  background:$link-color;
+  margin-right: 2rem;
+    float: right;
+    width: 28%;
+    text-align: center;
+    padding-top: .2rem;
       }
     }
   }

@@ -7,6 +7,9 @@
     width:18%;
   }
 }
+.arrow{
+  display:none;
+}
 
 @media (min-width:800px){
   .skateboards{
@@ -16,5 +19,31 @@
     img{
       @include span-columns(1 of 10);
     }
+  }
+}
+@media (min-width:1000px){
+  .arrow{
+    box-shadow: 0px 7px 2px 0px #6F6C6B;
+    display: inline-block;
+    font-size: 1rem;
+    height: 57px;
+    width: 110px;
+    background: #B4292E;
+    color: #fff;
+    text-align: center;
+    padding-top: 1.4rem;
+    position: absolute;
+    left: 17px;
+    top: 970px;
+      }
+        .point{
+          position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29.5px 0 28.5px 24px;
+    border-color: transparent transparent transparent #B4292E;
+    top: 970px;
+    left: 127px;
   }
 }

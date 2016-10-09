@@ -7,7 +7,11 @@ display:none;
   padding-top:2rem;
   display:block;
 text-align:center;
-  color:$primary-text;
+  a{
+    color:$primary-text;
+    text-decoration:none;
+
+  }
   .subscribe-dot{
     font-size:6px;
     vertical-align:middle;
@@ -46,14 +50,13 @@ span{
  overflow:hidden;
   width:100%;
   position:relative;
-  height:9rem;
+  height:14rem;
   border:7px solid #fff;
 box-shadow: $box-shadow;
   .picture-1{
-    width:125%;
+    object-position: -105px -37px;
+    width:155%;
     position:relative;
-    height:12rem;
-    overflow:hidden;
     object-fit:cover;
 
   }
@@ -108,7 +111,7 @@ box-shadow: $box-shadow;
   .main-nav{
     clear:both;
     display:block;
-    padding-bottom:1.3rem;
+    padding-bottom:1.8rem;
    li {
      @include span-columns(3);
      padding:.3rem;
@@ -125,13 +128,15 @@ box-shadow: $box-shadow;
     }
   }
   .hero{
-    height:17rem;
+    height:23rem;
     .picture-1{
-      height:25rem;
+      width:137%;
+      object-position: -40px -45px;
     }
       .logo{
-        top:27px;
+        top:0;
         left:8px;
+        width:48%;
     }
   }
   .picture-change{
